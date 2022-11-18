@@ -1,0 +1,702 @@
+[
+  {
+    "dimension": "Culture",
+    "stage": "Plan",
+    "l1": {
+      "id": "0.0.0",
+      "attr": ["Agile Methodology", "Ad-hoc security training for developers", "Software security requirements"]
+    },
+    "l2": {
+      "id": "0.0.1",
+      "attr": ["Regular security training for developers", "Conduct collaborative security training with developer and admins", "Institute role and elect security champions"]
+    },
+    "l3": {
+      "id": "0.0.2",
+      "attr": ["Security feedback are incorporated in the SDLC", "Manage security as code (SaC)"]
+    },
+    "l4": {
+      "id": "0.0.3",
+      "attr": ["'Shift Left' in the lifecycle", "Security at scale"]
+    }
+  },
+  {
+    "dimension": "Culture",
+    "stage": "Code",
+    "l1": {
+      "id": "0.1.0",
+      "attr": ["Have a version control management strategy", "Have a branching strategy", "Ad-hoc secure code review"]
+    },
+    "l2": {
+      "id": "0.1.1",
+      "attr": ["Defined security policies", "Defined PR process"]
+    },
+    "l3": {
+      "id": "0.1.2",
+      "attr": ["Follow Test Driven Development (TDD)", "Enforce secure coding standards and policies", "Code Audit for dependencies and vulnerabilities"]
+    },
+    "l4": {
+      "id": "0.1.3",
+      "attr": ["Static Application Security Test (SAST) for malicious code detection"]
+    }
+  },
+  {
+    "dimension": "Culture",
+    "stage": "Test",
+    "l1": {
+      "id": "0.2.0",
+      "attr": ["Defined test plans for Unit and Integration tests"]
+    },
+    "l2": {
+      "id": "0.2.1",
+      "attr": ["Security acceptance criteria", "Report on defect metrics"]
+    },
+    "l3": {
+      "id": "0.2.2",
+      "attr": ["Penetration Test", "Test coverage analysis"]
+    },
+    "l4": {
+      "id": "0.2.3",
+      "attr": ["Audit code and artifact as part of CI/CD", "Artifact Vulnerability Scanning"]
+    }
+  },
+  {
+    "dimension": "Culture",
+    "stage": "Build",
+    "l1": {
+      "id": "0.3.0",
+      "attr": ["Defined build process for creating artifacts"]
+    },
+    "l2": {
+      "id": "0.3.1",
+      "attr": ["Have a CI/CD build pipeline"]
+    },
+    "l3": {
+      "id": "0.3.2",
+      "attr": ["Use artifact registry", "Build verification test", "Use of Secrets manager/ parameter store"]
+    },
+    "l4": {
+      "id": "0.3.3",
+      "attr": ["Use of image/ build bakery"]
+    }
+  },
+  {
+    "dimension": "Culture",
+    "stage": "Deploy & Release",
+    "l1": {
+      "id": "0.4.0",
+      "attr": ["Defined deployment [in-place] and rollback process"]
+    },
+    "l2": {
+      "id": "0.4.1",
+      "attr": ["Have multiple environments configured", "Defined decommission process"]
+    },
+    "l3": {
+      "id": "0.4.2",
+      "attr": ["Rolling update deployment strategy"]
+    },
+    "l4": {
+      "id": "0.4.3",
+      "attr": ["Blue/Green Deployment strategy"]
+    }
+  },
+  {
+    "dimension": "Culture",
+    "stage": "Operate",
+    "l1": {
+      "id": "0.5.0",
+      "attr": ["Basic System and Application KPIs identified"]
+    },
+    "l2": {
+      "id": "0.5.1",
+      "attr": ["Dashboard for critical services and applications"]
+    },
+    "l3": {
+      "id": "0.5.2",
+      "attr": ["Telemetry instrumentation plans"]
+    },
+    "l4": {
+      "id": "0.5.3",
+      "attr": ["Dedicated Observability team"]
+    }
+  },
+  {
+    "dimension": "Culture",
+    "stage": "Monitor",
+    "l1": {
+      "id": "0.6.0",
+      "attr": ["Defined set of standards on monitoring of infrastructure, service, and application"]
+    },
+    "l2": {
+      "id": "0.6.1",
+      "attr": ["Process in place for uniform monitoring and metrics capture"]
+    },
+    "l3": {
+      "id": "0.6.2",
+      "attr": ["Dedicated SRE team"]
+    },
+    "l4": {
+      "id": "0.6.3",
+      "attr": ["Identification of actionable insights and their incorporation into strategic planning"]
+    }
+  },
+  {
+    "dimension": "Automation",
+    "stage": "Plan",
+    "l1": {
+      "id": "1.0.0",
+      "attr": ["Defined set of standards on monitoring of infrastructure, service, and application"]
+    },
+    "l2": {
+      "id": "1.0.1",
+      "attr": ["Process in place for uniform monitoring and metrics capture"]
+    },
+    "l3": {
+      "id": "1.0.2",
+      "attr": ["Dedicated SRE team"]
+    },
+    "l4": {
+      "id": "1.0.3",
+      "attr": ["Identification of actionable insights and their incorporation into strategic planning"]
+    }
+  },
+  {
+    "dimension": "Automation",
+    "stage": "Code",
+    "l1": {
+      "id": "1.1.0",
+      "attr": ["Use version control management tool"]
+    },
+    "l2": {
+      "id": "1.1.1",
+      "attr": ["IDE plugins for per-commit code standards check"]
+    },
+    "l3": {
+      "id": "1.1.2",
+      "attr": ["Sorce Code dependency monitoring"]
+    },
+    "l4": {
+      "id": "1.1.3",
+      "attr": ["Static Application Security Test (SAST)", "Maintain artifact lifecycle policy"]
+    }
+  },
+  {
+    "dimension": "Automation",
+    "stage": "Test",
+    "l1": {
+      "id": "1.2.0",
+      "attr": ["Unit & Integration test cases"]
+    },
+    "l2": {
+      "id": "1.2.1",
+      "attr": ["Use of defect management tool"]
+    },
+    "l3": {
+      "id": "1.2.2",
+      "attr": ["Automated [Security] test for CI/CD pipeline"]
+    },
+    "l4": {
+      "id": "1.2.3",
+      "attr": ["Dynamic Application Security Test (DAST)", "Integrated Application Security Test (IAST)"]
+    }
+  },
+  {
+    "dimension": "Automation",
+    "stage": "Build",
+    "l1": {
+      "id": "1.3.0",
+      "attr": ["Local Build Scripts", "Basic Schedule Builds"]
+    },
+    "l2": {
+      "id": "1.3.1",
+      "attr": ["Continuous integration using CI/CD pipeline"]
+    },
+    "l3": {
+      "id": "1.3.2",
+      "attr": ["Publish build artifacts to registry", "Build verification in CI/CD pipeline"]
+    },
+    "l4": {
+      "id": "1.3.3",
+      "attr": ["Daily scan and image auto rebuild"]
+    }
+  },
+  {
+    "dimension": "Automation",
+    "stage": "Deploy & Release",
+    "l1": {
+      "id": "1.4.0",
+      "attr": ["Local deployment playbook"]
+    },
+    "l2": {
+      "id": "1.4.1",
+      "attr": ["Continuous delivery using CI/CD pipeline"]
+    },
+    "l3": {
+      "id": "1.4.2",
+      "attr": ["Use of Secrets/Config/Systems Manager"]
+    },
+    "l4": {
+      "id": "1.4.3",
+      "attr": ["Artifact auto scan for vulnerability before deploy", "Container dependency scan"]
+    }
+  },
+  {
+    "dimension": "Automation",
+    "stage": "Operate",
+    "l1": {
+      "id": "1.5.0",
+      "attr": ["KPI capture for system and application"]
+    },
+    "l2": {
+      "id": "1.5.1",
+      "attr": ["Live Dashboards"]
+    },
+    "l3": {
+      "id": "1.5.2",
+      "attr": ["Telemetry instrumented"]
+    },
+    "l4": {
+      "id": "1.5.3",
+      "attr": ["Enterprise Observability platform in-place"]
+    }
+  },
+  {
+    "dimension": "Automation",
+    "stage": "Monitor",
+    "l1": {
+      "id": "1.6.0",
+      "attr": ["No/Limited automated monitoring & alerting"]
+    },
+    "l2": {
+      "id": "1.6.1",
+      "attr": ["Critical SLI monitoring & alerting"]
+    },
+    "l3": {
+      "id": "1.6.2",
+      "attr": ["Automated SLI data analysis (trends, anomaly, outliers, etc.)"]
+    },
+    "l4": {
+      "id": "1.6.3",
+      "attr": ["Real-time comprehensive monitoring & alerting"]
+    }
+  },
+  {
+    "dimension": "Lean",
+    "stage": "Plan",
+    "l1": {
+      "id": "2.0.0",
+      "attr": ["On-demand source code review"]
+    },
+    "l2": {
+      "id": "2.0.1",
+      "attr": ["Unified security acceptance criteria", "Early threat monitoring in SDLC"]
+    },
+    "l3": {
+      "id": "2.0.2",
+      "attr": ["Incident response remediation process", "Develop threat scenario tests"]
+    },
+    "l4": {
+      "id": "2.0.3",
+      "attr": ["Follow chaos engineering"]
+    }
+  },
+  {
+    "dimension": "Lean",
+    "stage": "Code",
+    "l1": {
+      "id": "2.1.0",
+      "attr": ["Define a branching strategy"]
+    },
+    "l2": {
+      "id": "2.1.1",
+      "attr": ["Unwanted libraries/packages aren't installed", "Obsolete artifacts are deprecated"]
+    },
+    "l3": {
+      "id": "2.1.2",
+      "attr": ["Pull request automation", "Dev teams can provision environments (IaC)"]
+    },
+    "l4": {
+      "id": "2.1.3",
+      "attr": ["Code commits trigger security scans", "Fundamental app functions are re-engineered to reduce flaw density risk"]
+    }
+  },
+  {
+    "dimension": "Lean",
+    "stage": "Test",
+    "l1": {
+      "id": "2.2.0",
+      "attr": ["Regression Test"]
+    },
+    "l2": {
+      "id": "2.2.1",
+      "attr": ["Centralized defect report"]
+    },
+    "l3": {
+      "id": "2.2.2",
+      "attr": ["Vulnerability checks in CI/CD", "Prevent vulnerable code uplift to per-prod/UAT"]
+    },
+    "l4": {
+      "id": "2.2.3",
+      "attr": ["Build image scans in CI/CD pipeline", "Threat scenario test"]
+    }
+  },
+  {
+    "dimension": "Lean",
+    "stage": "Build",
+    "l1": {
+      "id": "2.3.0",
+      "attr": ["Use environment build configs."]
+    },
+    "l2": {
+      "id": "2.3.1",
+      "attr": ["Use of CI/CD tools"]
+    },
+    "l3": {
+      "id": "2.3.2",
+      "attr": ["Code commit trigger automated tests"]
+    },
+    "l4": {
+      "id": "2.3.3",
+      "attr": ["Frequent artifact registry scans"]
+    }
+  },
+  {
+    "dimension": "Lean",
+    "stage": "Deploy & Release",
+    "l1": {
+      "id": "2.4.0",
+      "attr": ["Use of deployment playbook"]
+    },
+    "l2": {
+      "id": "2.4.1",
+      "attr": ["Standard deploy process for all environments", "Multiple build pipelines"]
+    },
+    "l3": {
+      "id": "2.4.2",
+      "attr": ["Rolling/Canary deployments", "Auto termination of resources in rollback"]
+    },
+    "l4": {
+      "id": "2.4.3",
+      "attr": ["Immutable deployments"]
+    }
+  },
+  {
+    "dimension": "Lean",
+    "stage": "Operate",
+    "l1": {
+      "id": "2.5.0",
+      "attr": ["KPI measurement and reporting criteria"]
+    },
+    "l2": {
+      "id": "2.5.1",
+      "attr": ["Reusable patterns policies for access management"]
+    },
+    "l3": {
+      "id": "2.5.2",
+      "attr": ["Custom policies against attack (XSS, SQL injections, etc.)"]
+    },
+    "l4": {
+      "id": "2.5.3",
+      "attr": ["Run time application self protection", "Web application firewall"]
+    }
+  },
+  {
+    "dimension": "Lean",
+    "stage": "Monitor",
+    "l1": {
+      "id": "2.6.0",
+      "attr": ["Disparate use of tools for monitoring and alerting"]
+    },
+    "l2": {
+      "id": "2.6.1",
+      "attr": ["Centralized platform for SLI data collection, storage, and analysis"]
+    },
+    "l3": {
+      "id": "2.6.2",
+      "attr": ["Use of data intelligence platform for SLIs", "Software function design security and control review"]
+    },
+    "l4": {
+      "id": "2.6.3",
+      "attr": ["Integrated data science function for forensics on the fly", "Security scan and recommendation with SLA"]
+    }
+  },
+  {
+    "dimension": "Measurement",
+    "stage": "Plan",
+    "l1": {
+      "id": "3.0.0",
+      "attr": ["Basic DevSecOps metrics collection (deployment, frequency, lead time, service availability, etc.)"]
+    },
+    "l2": {
+      "id": "3.0.1",
+      "attr": ["DevSecOps performance goals identified", "Metrics are used to improved the quality and speed of delivery", "Integrate security tools with defect management tools"]
+    },
+    "l3": {
+      "id": "3.0.2",
+      "attr": ["Backup & Restore activities", "Business critical assets identification", "Complex and old applications with high flaw density are tracked and isolated"]
+    },
+    "l4": {
+      "id": "3.0.3",
+      "attr": ["Recovery time objectives (RTO) and Recovery point objective (RPO) for business continuity and disaster recovery (BCDR)"]
+    }
+  },
+  {
+    "dimension": "Measurement",
+    "stage": "Code",
+    "l1": {
+      "id": "3.1.0",
+      "attr": ["Code quality standards", "Certify repo access on regular basis"]
+    },
+    "l2": {
+      "id": "3.1.1",
+      "attr": ["Build versioning & tagging"]
+    },
+    "l3": {
+      "id": "3.1.2",
+      "attr": ["Environment (dev-prod) parity", "Track non-fixable vulnerability"]
+    },
+    "l4": {
+      "id": "3.1.3",
+      "attr": ["Code signing", "Vulnerability patch management"]
+    }
+  },
+  {
+    "dimension": "Measurement",
+    "stage": "Test",
+    "l1": {
+      "id": "3.2.0",
+      "attr": ["QA Testing efficiency (defect leakage)", "Test coverage < 50%"]
+    },
+    "l2": {
+      "id": "3.2.1",
+      "attr": ["Test coverage > 75%"]
+    },
+    "l3": {
+      "id": "3.2.2",
+      "attr": ["Test coverage ~ 100%", "Security defect prioritization", "Recovery objective for downtime and data loss"]
+    },
+    "l4": {
+      "id": "3.2.3",
+      "attr": ["Application vulnerability correlation", "Disaster recovery implementation test"]
+    }
+  },
+  {
+    "dimension": "Measurement",
+    "stage": "Build",
+    "l1": {
+      "id": "3.3.0",
+      "attr": ["Build schedules", "Test results"]
+    },
+    "l2": {
+      "id": "3.3.1",
+      "attr": ["Test coverage and efficiency metrics"]
+    },
+    "l3": {
+      "id": "3.3.2",
+      "attr": ["Build verification test metrics", "Penetration test efficiency metrics"]
+    },
+    "l4": {
+      "id": "3.3.3",
+      "attr": ["Image/Build bakery version management"]
+    }
+  },
+  {
+    "dimension": "Measurement",
+    "stage": "Deploy & Release",
+    "l1": {
+      "id": "3.4.0",
+      "attr": ["Impact of failed deployment (downtime)"]
+    },
+    "l2": {
+      "id": "3.4.1",
+      "attr": ["DevSecOps deployment metrics (lead time, deployment frequency, change failure rate, etc.)"]
+    },
+    "l3": {
+      "id": "3.4.2",
+      "attr": ["Secrets rotation", "Use security remediation data for go/no-go", "Backward-forward compatibility for breaking changes"]
+    },
+    "l4": {
+      "id": "3.4.3",
+      "attr": ["Maintain immutable infrastructure"]
+    }
+  },
+  {
+    "dimension": "Measurement",
+    "stage": "Operate",
+    "l1": {
+      "id": "3.5.0",
+      "attr": ["Aggregated KPIs", "Ad-hoc track and triage defects"]
+    },
+    "l2": {
+      "id": "3.5.1",
+      "attr": ["KPIs for critical systems and apps", "Frequent dashboard refresh"]
+    },
+    "l3": {
+      "id": "3.5.2",
+      "attr": ["M.E.L.T. (Metrics, Events, Logs, Traces) capture"]
+    },
+    "l4": {
+      "id": "3.5.3",
+      "attr": ["Real-time monitoring and alerting", "Security bug fix and hunt bounty program"]
+    }
+  },
+  {
+    "dimension": "Measurement",
+    "stage": "Monitor",
+    "l1": {
+      "id": "3.6.0",
+      "attr": ["Ad-hoc analysis by teams/people"]
+    },
+    "l2": {
+      "id": "3.6.1",
+      "attr": ["SLA/SLO breach analysis"]
+    },
+    "l3": {
+      "id": "3.6.2",
+      "attr": ["OSS licensing requirements are met across three quarter", "Frequent streaming analytics for critical systems", "Vulnerability for duplication and false-positive"]
+    },
+    "l4": {
+      "id": "3.6.3",
+      "attr": ["Real-time streaming analytics at scale"]
+    }
+  },
+  {
+    "dimension": "Sharing",
+    "stage": "Plan",
+    "l1": {
+      "id": "4.0.0",
+      "attr": ["Secure coding best-practices", "Basic KRIs/KPIs"]
+    },
+    "l2": {
+      "id": "4.0.1",
+      "attr": ["Policy templates", "SLA/SLO for systems and applications", "Security knowledge management wikis"]
+    },
+    "l3": {
+      "id": "4.0.2",
+      "attr": ["IaC templates", "Security scanning policies for artifacts", "Secure coding days/events"]
+    },
+    "l4": {
+      "id": "4.0.3",
+      "attr": ["BCDR strategy (active-active/active-passive)", "DevSecOps team feedback helps security plan and investment"]
+    }
+  },
+  {
+    "dimension": "Sharing",
+    "stage": "Code",
+    "l1": {
+      "id": "4.1.0",
+      "attr": ["Code commit, versioning, and branching strategy"]
+    },
+    "l2": {
+      "id": "4.1.1",
+      "attr": ["Security policies", "Artifact deprecation and resource decommission strategy"]
+    },
+    "l3": {
+      "id": "4.1.2",
+      "attr": ["Inventory of common vulnerability for audit"]
+    },
+    "l4": {
+      "id": "4.1.3",
+      "attr": ["SAST tools", "Security test script for threat scenarios"]
+    }
+  },
+  {
+    "dimension": "Sharing",
+    "stage": "Test",
+    "l1": {
+      "id": "4.2.0",
+      "attr": ["Test plans"]
+    },
+    "l2": {
+      "id": "4.2.1",
+      "attr": ["Test coverage criteria", "Defect management tools"]
+    },
+    "l3": {
+      "id": "4.2.2",
+      "attr": ["Penetration testing execution standards"]
+    },
+    "l4": {
+      "id": "4.2.3",
+      "attr": ["DAST/ISAT tools", "Application exploit trigger toolset"]
+    }
+  },
+  {
+    "dimension": "Sharing",
+    "stage": "Build",
+    "l1": {
+      "id": "4.3.0",
+      "attr": ["Document build process/scripts"]
+    },
+    "l2": {
+      "id": "4.3.1",
+      "attr": ["CI/CD build pipeline tools"]
+    },
+    "l3": {
+      "id": "4.3.2",
+      "attr": ["Artifact registry tools"]
+    },
+    "l4": {
+      "id": "4.3.3",
+      "attr": ["Basic images, Reusable artifacts"]
+    }
+  },
+  {
+    "dimension": "Sharing",
+    "stage": "Deploy & Release",
+    "l1": {
+      "id": "4.4.0",
+      "attr": ["Documented deployment process", "Release notes templates"]
+    },
+    "l2": {
+      "id": "4.4.1",
+      "attr": ["Release to prod strategy"]
+    },
+    "l3": {
+      "id": "4.4.2",
+      "attr": ["Prod deployment schedules", "Secrets and config management policies"]
+    },
+    "l4": {
+      "id": "4.4.3",
+      "attr": ["Recovery objective for downtime and data loss"]
+    }
+  },
+  {
+    "dimension": "Sharing",
+    "stage": "Operate",
+    "l1": {
+      "id": "4.5.0",
+      "attr": ["Basic systems and application KPI reports"]
+    },
+    "l2": {
+      "id": "4.5.1",
+      "attr": ["KPI dashboards and thresholds"]
+    },
+    "l3": {
+      "id": "4.5.2",
+      "attr": ["Reliability scorecards for service and apps", "Repeatable vulnerability root-case", "Use of chat-ops/chat-bots"]
+    },
+    "l4": {
+      "id": "4.5.3",
+      "attr": ["Host game days"]
+    }
+  },
+  {
+    "dimension": "Sharing",
+    "stage": "Monitor",
+    "l1": {
+      "id": "4.6.0",
+      "attr": ["Inventory of infrastructure, services, and applications", "Software bill of materials (SBoM)"]
+    },
+    "l2": {
+      "id": "4.6.1",
+      "attr": ["Ad-hoc communication of incident reports"]
+    },
+    "l3": {
+      "id": "4.6.2",
+      "attr": ["Well defined incident response plan"]
+    },
+    "l4": {
+      "id": "4.6.3",
+      "attr": ["Automated incident response services"]
+    }
+  }
+]

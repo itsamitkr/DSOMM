@@ -1,6 +1,6 @@
 {
-  "name": "DSOMM",
-  "version": "1.0.0",
+  "name": "devsecops-assessment-tool",
+  "version": "2.0.0",
   "description": "A JavaScript project",
   "main": "./dist/index.js",
   "scripts": {
@@ -19,10 +19,11 @@
     "eslint": "^8.24.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.26.0",
-    "parcel-bundler": "^1.12.5"
+    "parcel-bundler": "^1.3.1",
+    "prettier": "2.7.1"
   },
   "dependencies": {
-    "random-number": "^0.0.9",
-    "random-sentence": "^1.0.4"
+    "jspdf": "^1.5.3",
+    "lodash": "^4.17.21"
   }
 }
